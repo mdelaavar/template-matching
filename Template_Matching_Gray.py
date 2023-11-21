@@ -20,7 +20,6 @@ for image in os.listdir("images/"):
         match_found = False
         threshold = 0.0005  # could be changed foe different method, this value is proper for "SQDIFF_NORMED"
         folder_name = name_meth.get(str(method))
-        here_path = os.getcwd()
         if name not in os.listdir(here_path):
             os.mkdir(folder_name)
 
